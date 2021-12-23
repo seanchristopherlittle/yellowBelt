@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navBar">
+            <div class="navBarLeft">
+                <img src="assets/leaf.png" alt="leaf" id="leaf">
+                <h1>EasyBay</h1>
+            </div>
+            <div class="navBarCenter">
+                <form action="">
+                    <input type="text" name="search" placeholder="Search for anything" id="searchBar">
+                </form>
+                <img src="assets/search-dark.png" alt="search icon" id="magGlass">
+            </div>
+            <div class="navBarRight">
+                <button class="signIn">Sign In</button>
+                <img src="assets/cart-dark.png" alt="shopping cart" id="cart" onclick="alert('Your Cart is empty!')">
+            </div>
+        </div>
+        <ul class="plantList">
+            <li>Aeonium</li>
+            <li>Andormischus</li>
+            <li>Agave</li>
+            <li>Aloe</li>
+            <li>Anacampseros</li>
+            <li>Aristaloe</li>
+            <li>More...</li>
+        </ul>
+        <h1 id="sansSerif" class="banner">Your Source for Serious Succulent Specialties</h1>      
+        <div class="midSection">
+            <div class="midLeft">
+                <div class="discoverBox">
+                        <h1 class="varietiesDescript" id="sansSerif">Discover succulent varieties one pot or rack at a time!</h1>
+                        <div class="discover">
+                            <h1 id="sansSerif">Discover</h1>
+                            <img src="assets/arrow-light.png" alt="arrow" id="arrow">
+                        </div>
+                </div>
+                <img src="assets/succulents-1.jpg" alt="succulents" id="imgChange" onmouseover="changeSrc(this)" onmouseout="changeSrcBack(this)">
+            </div>
+            <div class="midRight">
+                <img src="assets/aloe-m.jpg" alt="aloe" id="aloe-m">
+                <div class="aloeFeature">
+                    <h2 class="soothing" id="sansSerif">Soothing Aloe</h2>
+                    <img src="assets/arrow-light.png" alt="arrow" id="arrow">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottomSection">
+                <div class="plantLink">
+                    <img src="assets/aeonium-s.jpg" alt="Aeonium" id="smallPlant">
+                    <p class="smallPlantTxt" id="sansSerif">Aeonium</p>
+                </div>
+                <div class="plantLink">
+                    <img src="assets/aloe-s.jpg" alt="Aloe" id="smallPlant">
+                    <p class="smallPlantTxt" id="sansSerif">Aloe</p>
+                </div>
+                <div class="plantLink">
+                    <img src="assets/cactus-s.jpg" alt="Cactus" id="smallPlant">
+                    <p class="smallPlantTxt" id="sansSerif">Cactus</p>
+                </div>
+                <div class="plantLink">
+                    <img src="assets/echeveria-s.jpg" alt="Echeveria" id="smallPlant">
+                    <p class="smallPlantTxt" id="sansSerif">Echeveria</p>
+                </div>
+                <div class="plantLink">
+                    <img src="assets/sedum-s.jpg" alt="Sedum" id="smallPlant">
+                    <p class="smallPlantTxt" id="sansSerif">Sedum</p>
+                </div>
+                <div class="plantLink">
+                    <img src=assets/sempervivum-s.jpg alt="Sempervivum" id="smallPlant">
+                    <p class="smallPlantTxt" id="sansSerif">Sempervivum</p>
+                </div>
+            </div>
+            <div class="bottomPopUp">
+                <img src="assets/alert-dark.png" alt="warning alert" id="caution">
+                <p class="cookies">This site makes use of third-party cookies, by clicking "I accept" you are agree to the terms outlined in our <span></span><a href="https://termly.io/products/tl/cookie-consent-manager/?utm_campaign_id=896140991&utm_adgroup=cookie_policy_exact&utm_adgroup_id=44475437493&utm_source=google&utm_medium=cpc&utm_campaign=cookie_policy_us&utm_term=standard%20cookie%20policy&utm_content=318075309048&hsa_acc=8931548921&hsa_cam=896140991&hsa_grp=44475437493&hsa_ad=318075309048&hsa_src=g&hsa_tgt=kwd-339939978366&hsa_kw=standard%20cookie%20policy&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAiAh_GNBhAHEiwAjOh3ZPgdOliTU8IDKvGz3z8LB9T8-5by7mcGITX24INbFB0eJ0IqYTJTEBoCvLYQAvD_BwE">cookie policy</a>.</p>
+                <button class="accept" onclick="hidePopUp(this.parentElement.style.display = 'none')">I Accept</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
